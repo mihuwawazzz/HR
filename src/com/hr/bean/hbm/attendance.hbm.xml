@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hr.bean.Attendance" table="ATTENDANCES">
+        <id name="id" column="ID" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="USER_ID"/>
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="YEAR"/>
+        </property>
+        <property name="month" type="java.lang.Integer">
+            <column name="MONTH"/>
+        </property>
+        <property name="day" type="java.lang.Integer">
+            <column name="DAY"/>
+        </property>
+        <property name="clockInTime" type="java.util.Date">
+            <column name="CLOCK_IN_TIME"/>
+        </property>
+        <property name="clockOutTime" type="java.util.Date">
+            <column name="CLOCK_OUT_TIME"/>
+        </property>
+        <property name="state" type="java.lang.Integer">
+            <column name="STATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

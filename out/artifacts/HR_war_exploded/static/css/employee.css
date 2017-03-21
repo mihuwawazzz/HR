@@ -1,0 +1,173 @@
+#page {
+    margin: 0 auto 0 auto;
+    width: 60%;
+    font-size: 18px;
+
+}
+
+#header {
+    height: 80px
+}
+
+a {
+    text-decoration: none;
+}
+
+.right-title, .left-title {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Heiti SC";
+}
+
+.left-title {
+    padding-left: 10px;
+    padding-top: 15px;
+    height: 30px;
+}
+
+#left, #right {
+    float: left;
+    height: 620px;
+    border-radius: 15px;
+    font-size: 19px;
+}
+
+#left {
+    width: 180px;
+}
+
+#right {
+    margin-left: 20px;
+    width: 600px;
+    background: #d5ffe8;
+}
+
+#left-attendance, #left-user, #left-salary, #left-train {
+
+    background: #d5ffe8;
+    padding-left: 10px;
+    height: 151px;
+    border-radius: 15px;
+    border-bottom: 5px white solid;
+}
+
+.left-items {
+    width: 150px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.clock-in-out {
+    margin-top: 20px;
+    width: 560px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.clock-in-out input[type=button] {
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #2cff4c;
+}
+
+#calendar {
+    margin-left: 40px;
+    width: 550px;
+}
+
+#show td, #show td th {
+    width: 66px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px #ffffff solid;
+}
+
+#attendance-detail td, #attendance-detail th {
+    width: 66px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px #ffffff solid;
+}
+
+#attendance-desc {
+    width: 517px;
+}
+
+.attendance-desc {
+    float: right;
+    width: 30px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.attendance-desc-name {
+    float: right;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+#attendance-checkByDay {
+    margin-top: 100px;
+    margin-left: 50px;
+    float: left;
+}
+
+#user-info {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#user-info td, #user-info th {
+    font-size: 17px;
+    text-align: left;
+}
+
+#department-position {
+    width: 550px;
+    height: 250px;
+    overflow-y: auto;
+    margin-top: 50px;
+}
+
+#department-position div{
+    line-height: 30px;
+}
+
+
+.training{
+    margin-left: 100px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 15px;
+    background: lightblue;
+    width: 450px;
+    padding-bottom: 5px;
+}
+.trainingDetail{
+    margin-left: 30px;
+}
+.trainingDetailTable td{
+    border: blue 1px solid;
+}
+.trainingDetailItems{
+    width: 130px;
+}
+.trainingDetailItems2{
+    width: 380px;
+}
+.trainingDetailTable td,.trainingDetailTable th{
+    border: blue 1px solid;
+}
+.trainingDetailTable textarea{
+    font-size: 18px;
+    height: 200px;
+    width: 380px;
+    max-width: 380px;
+    max-height: 200px;
+    text-indent: 3em;
+}

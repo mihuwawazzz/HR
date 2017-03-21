@@ -1,0 +1,57 @@
+#page {
+    margin: 0 auto 0 auto;
+    width: 60%;
+    font-size: 18px;
+}
+
+input, select, option {
+    font-size: 18px;
+}
+
+td, th {
+    border: blue 1px solid;
+}
+
+td {
+    width: 400px;
+}
+
+.items {
+    width: 130px;
+}
+
+#left {
+    font-size: 20px;
+    width: 180px;
+    text-align: center;
+}
+
+#right {
+    margin-left: 20px;
+    width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#left, #right {
+    padding-top: 20px;
+    background: #ffefed;
+    float: left;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.left, .resume {
+    margin-top: 40px;
+    width: 180px;
+    height: 40px;
+}
+
+textarea {
+    font-size: 18px;
+    width: 450px;
+    height: 120px;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hr.bean.Training" table="TRAININGS">
+        <id name="id" column="ID" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE"/>
+        </property>
+        <property name="lecturer" type="java.lang.String">
+            <column name="LECTURER"/>
+        </property>
+        <property name="context" type="java.lang.String">
+            <column name="CONTEXT"/>
+        </property>
+        <property name="beginDate" type="java.util.Date">
+            <column name="BEGIN_DATE"/>
+        </property>
+        <property name="minute" type="java.lang.Integer">
+            <column name="MINUTE"/>
+        </property>
+        <property name="state" type="java.lang.Integer">
+            <column name="STATE"/>
+        </property>
+        <property name="trainingDes" type="java.lang.String">
+            <column name="TRAININGDES"/>
+        </property>
+        <set name="trainingNotices" inverse="true">
+            <key column="TRAINING_ID"/>
+            <one-to-many class="com.hr.bean.TrainingNotice"/>
+        </set>
+    </class>
+</hibernate-mapping>

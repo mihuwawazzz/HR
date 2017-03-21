@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hr.bean.RewardAndPunishment" table="REWARDS_PUNISHMENTS">
+        <id name="id" column="ID" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="USER_ID"/>
+        </property>
+        <property name="reason" type="java.lang.String">
+            <column name="REASON"/>
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="DATE"/>
+        </property>
+        <property name="month" type="java.lang.Integer">
+            <column name="MONTH"/>
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="COMMENT"/>
+        </property>
+        <property name="money" type="java.lang.Double">
+            <column name="MONEY"/>
+        </property>
+        <property name="state" type="java.lang.Integer">
+            <column name="STATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

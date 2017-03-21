@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hr.bean.Resume" table="RESUMES">
+        <id name="id" column="ID" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="USER_ID"/>
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" length="30"/>
+        </property>
+        <property name="username" type="java.lang.String">
+            <column name="USERNAME" length="20"/>
+        </property>
+        <property name="birthday" type="java.util.Date">
+            <column name="BIRTHDAY"/>
+        </property>
+        <property name="gender" type="java.lang.Integer">
+            <column name="GENDER"/>
+        </property>
+        <property name="positionId" type="java.lang.Integer">
+            <column name="POSITION_ID"/>
+        </property>
+        <property name="workExperience" type="java.lang.String">
+            <column name="WORK_EXPERIENCE"/>
+        </property>
+        <property name="introduction" type="java.lang.String">
+            <column name="INTRODUCTION"/>
+        </property>
+        <property name="state" type="java.lang.Integer">
+            <column name="STATE"/>
+        </property>
+        <property name="interviewNote" type="java.lang.String">
+            <column name="INTERVIEW_NOTE"/>
+        </property>
+        <property name="interviewState" type="java.lang.Integer">
+            <column name="INTERVIEW_STATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

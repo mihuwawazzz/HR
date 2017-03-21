@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hr.bean.Salary" table="SALARYS">
+        <id name="id" column="ID" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="USER_ID"/>
+        </property>
+        <property name="basicSalary" type="java.lang.Double">
+            <column name="BASIC_SALARY"/>
+        </property>
+        <property name="overtimePay" type="java.lang.Double">
+            <column name="OVERTIME_PAY"/>
+        </property>
+        <property name="rewardAndPunishment" type="java.lang.Double">
+            <column name="REWARDANDPUNISHMENT"/>
+        </property>
+        <property name="socialInsurance" type="java.lang.Double">
+            <column name="SOCIAL_INSURANCE"/>
+        </property>
+        <property name="total" type="java.lang.Double">
+            <column name="TOTAL"/>
+        </property>
+        <property name="settlementDate" type="java.util.Date">
+            <column name="SETTLEMENT_DATE"/>
+        </property>
+    </class>
+</hibernate-mapping>
