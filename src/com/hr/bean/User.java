@@ -15,7 +15,7 @@ public class User {
     private Integer positionId;     //职位id
     private Integer gender;         //性别    0：女    1：男
     private Double basicSalary;     //基本工资
-    private Integer state;          //状态    0：离职    1：在职    2：试用期   3：退休
+    private Integer state;          //状态    0：离职    1：在职    2：退休
 
     public User() {
     }

@@ -54,14 +54,6 @@
                 <tr>
                     <th colspan="7" id="calendar-title"></th>
                 </tr>
-                <script>
-                    var date = new Date();
-                    var year = date.getFullYear();
-                    var month = date.getMonth() + 1;
-                    var days = new Date(year + "/" + month + "/" + "0").getDate();
-                    var firstDay = new Date(year + "/" + month + "/" + "1").getDay();
-                    $("#calendar-title").text(year + "年" + month + "月")
-                </script>
                 <tr>
                     <th>日</th>
                     <th>一</th>
@@ -79,6 +71,7 @@
                     var firstDay = new Date(year + "/" + month + "/" + "1").getDay();
                     var weekNum = 0;
                     var day = 1;
+                    $("#calendar-title").text(year + "年" + month + "月")
                     for (var i = -6; i < days + 1; i++) {
                         i = i + 7;
                         var wid = "week" + weekNum;
@@ -147,17 +140,17 @@
                     <input hidden="hidden" name="userId" value="${sessionScope.user.id}"/>
                     <select id="year" name="year">
                         <c:forEach var="year" items="${requestScope.years}">
-                            <option name="year" value="${year}">${year}</option>
+                            <option class="year" name="year" value="${year}">${year}</option>
                         </c:forEach>
                     </select>年
                     <select id="month" name="month">
                         <c:forEach var="month" items="${requestScope.months}">
-                            <option name="month" value="${month}">${month}</option>
+                            <option class="month" name="month" value="${month}">${month}</option>
                         </c:forEach>
                     </select>月
                     <select id="day" name="day">
                         <c:forEach var="i" begin="1" end="31">
-                            <option name="day" value="${i}">${i}</option>
+                            <option class="day" name="day" value="${i}">${i}</option>
                         </c:forEach>
                     </select>日
                     <input type="submit" value="查询">

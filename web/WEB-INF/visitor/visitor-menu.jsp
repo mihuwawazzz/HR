@@ -14,7 +14,7 @@
 </div>
 <script>
     $(function () {
-        setInterval(checkNote,5*60*1000);
+        setInterval(checkNote(),3*60*1000);
     });
     function checkNote() {
         $.ajax({

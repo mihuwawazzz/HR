@@ -3,9 +3,6 @@
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
 %>
-<script src="<%=basePath%>/static/js/jquery-3.1.1.js"></script>
-<script src="<%=basePath%>/static/js/jquery-ui.js"></script>
-<script src="<%=basePath%>/static/js/myJs.js"></script>
 <div id="left">
     <div id="left-attendance">
         <div class="left-title">考勤</div>
@@ -25,10 +22,7 @@
     <div id="left-salary">
         <div class="left-title">薪资/奖惩</div>
         <div class="left-items">
-            <a href="javascript:void(0)">查看薪资</a>
-        </div>
-        <div class="left-items">
-            <a href="javascript:void(0)">提出异议</a>
+            <a href="<%=basePath%>/salaryAndRewAndPun/queryLastSalaryAndRPByUserId/${sessionScope.user.id}">查看薪资</a>
         </div>
     </div>
     <div id="left-train">
@@ -38,9 +32,12 @@
         </div>
     </div>
 </div>
+<script src="<%=basePath%>/static/js/myJs.js"></script>
+<script src="<%=basePath%>/static/js/jquery-3.1.1.js"></script>
+<script src="<%=basePath%>/static/js/jquery-ui.js"></script>
 <script>
     $(function () {
-        setInterval(checkNote,5*60*1000);
+        setInterval(checkNote(),60000);
     });
     function checkNote() {
         $.ajax({

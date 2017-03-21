@@ -57,6 +57,24 @@ public class UserDaoImpl implements UserDao {
     @Override
     public List<User> queryByUsername(String username) {
         return (List<User>) hibernateTemplate
-                .find("from User where username=? and state=1", username);
+                .find("from User where username=? and state = 1", username);
+    }
+
+    @Override
+    public List<User> queryByUsernameAll(String username) {
+        return (List<User>) hibernateTemplate
+                .find("from User where username=? and state in(0,1,2)", username);
+    }
+
+    @Override
+    public void deleteUser(Integer id) {
+        User user = hibernateTemplate.get(User.class, id);
+        hibernateTemplate.delete(user);
+    }
+
+    @Override
+    public List<User> queryAll() {
+        return (List<User>) hibernateTemplate
+                .find("from User where state in(0,1,2)");
     }
 }

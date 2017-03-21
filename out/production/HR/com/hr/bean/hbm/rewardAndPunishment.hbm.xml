@@ -16,9 +16,6 @@
         <property name="date" type="java.util.Date">
             <column name="DATE"/>
         </property>
-        <property name="month" type="java.lang.Integer">
-            <column name="MONTH"/>
-        </property>
         <property name="comment" type="java.lang.String">
             <column name="COMMENT"/>
         </property>

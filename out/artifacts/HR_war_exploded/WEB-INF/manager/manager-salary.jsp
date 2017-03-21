@@ -20,7 +20,7 @@
             <a href="<%=basePath%>/salaryAndRewAndPun/insertSalary"><input id="settlementSalary" type="button" value="结算工资"/></a>
         </div>
         <div id="userDetail">
-            <form action="<%=basePath%>/user/queryByUsername">
+            <form action="<%=basePath%>/user/queryByUsernameAll">
                 请输入员工名字：<input name="username" type="text"/>
                 <input type="submit" value="查询"/>
             </form>
@@ -83,6 +83,16 @@
             $("."+cl).find("input:last").attr("name",name2);
             num++;
         });
+        $.ajax({
+            url:"/salaryAndRewAndPun/querySalaryForMakeSalary",
+            type:"get",
+            success:function (data) {
+                if(data.length != 0){
+                    $("#settlement").children().eq(0).attr("href","javascript:void(0)");
+                    $("#settlement").css("opacity", "0.3")
+                }
+            }
+        })
     })
 </script>
 </html>

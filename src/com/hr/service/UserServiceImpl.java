@@ -52,4 +52,19 @@ public class UserServiceImpl implements UserService {
         return userDao.queryByUsername(username);
     }
 
+    @Override
+    public List<User> queryByUsernameAll(String username) {
+        return userDao.queryByUsernameAll(username);
+    }
+
+    @Override
+    public void deleteUser(Integer id) {
+        userDao.deleteUser(id);
+    }
+
+    @Override
+    public List<User> queryAll() {
+        return userDao.queryAll();
+    }
+
 }

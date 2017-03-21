@@ -9,7 +9,7 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <!--事务自动提交-->
-        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.connection.autocommit">true</property>
         <!--数据库表生成策略为自动更新-->
         <property name="hibernate.hbm2ddl.auto">update</property>
     </session-factory>

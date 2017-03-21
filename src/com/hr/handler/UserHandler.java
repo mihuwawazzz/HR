@@ -9,11 +9,13 @@ import com.hr.service.interf.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -76,10 +78,41 @@ public class UserHandler {
 
 
     @RequestMapping(value = "/queryByUsername", method = RequestMethod.GET)
-    public String queryByUsername(String username,Map<String, Object> map){
+    public String queryByUsername(String username, Map<String, Object> map) {
         List<User> users = userService.queryByUsername(username);
-        map.put("users",users);
+        map.put("users", users);
         return "manager/manager-salary";
+    }
+
+    @RequestMapping(value = "/queryByUsernameAll", method = RequestMethod.GET)
+    public String queryByUsernameAll(String username, Map<String, Object> map) {
+        List<User> users = userService.queryByUsernameAll(username);
+        map.put("users", users);
+        return "manager/manager-salary";
+    }
+
+    @RequestMapping(value = "/queryByUsernameForUpdate", method = RequestMethod.GET)
+    public String queryByUsernameForUpdate(String username, Map<String, Object> map) {
+        List<User> users = new ArrayList<>();
+        if (username.equals("")) {
+            users = userService.queryAll();
+        } else {
+            users = userService.queryByUsername(username);
+        }
+        queryDepAndPosi(map);
+        map.put("users", users);
+        return "manager/manager-user";
+    }
+
+    @RequestMapping(value = "/goToUser")
+    public String goToUser() {
+        return "manager/manager-user";
+    }
+
+    @RequestMapping(value = "/deleteUser/{id}")
+    public String deleteUser(@PathVariable("id") Integer id) {
+        userService.deleteUser(id);
+        return "manager/manager-user";
     }
 
 }

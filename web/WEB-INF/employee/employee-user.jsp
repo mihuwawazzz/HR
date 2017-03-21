@@ -25,6 +25,7 @@
                     <th>性别</th>
                     <th>邮箱</th>
                     <th>出生日期</th>
+                    <th>基本工资</th>
                     <th>职位名</th>
                 </tr>
                 <tr>
@@ -37,6 +38,7 @@
                     <td style="width: 120px">${sessionScope.user.email}</td>
                     <td style="width: 140px"><fmt:formatDate value="${sessionScope.user.birthday}"
                                                              pattern="yyyy-MM-dd"/></td>
+                    <td style="width: 90px">${sessionScope.user.basicSalary}</td>
                     <td style="width: 120px">
                         <c:forEach var="department" items="${requestScope.departments}">
                             <c:forEach var="position" items="${department.positions}">
@@ -76,7 +78,6 @@
     </div>
 </div>
 </body>
-<script src="<%=basePath%>/static/js/jquery-3.1.1.js"></script>
 <script>
     $(function () {
         $(".department-items").click(function () {

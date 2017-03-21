@@ -25,15 +25,7 @@ public class AttendanceHandler {
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH) + 1;
         int day = calendar.get(Calendar.DAY_OF_MONTH);
-        Attendance attendance = attendanceService.queryByDate(userId, year, month, day);
-        if (attendance == null) {
-            attendance = new Attendance();
-            attendance.setUserId(userId);
-            attendance.setYear(year);
-            attendance.setMonth(month);
-            attendance.setDay(day);
-        }
-        return attendance;
+        return attendanceService.queryByDate(userId, year, month, day);
     }
 
     @RequestMapping(value = "/insertClockIn/{userId}", method = RequestMethod.GET)
@@ -47,8 +39,6 @@ public class AttendanceHandler {
             } else {
                 attendance.setState(1);
             }
-        } else {
-            attendance.setState(0);
         }
         attendance.setClockInTime(date);
         attendanceService.insertOrUpdateAttendance(attendance);
@@ -61,18 +51,22 @@ public class AttendanceHandler {
         Attendance attendance = initAttendance(userId);
         Date date = new Date();
         int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-        if (hour < AttendanceUtil.clock_out_hour) {
-            if (hour < 14) {
-                attendance.setState(4);
-            } else {
-                if (attendance.getState() == 1) {
-                    attendance.setState(3);
+        if(attendance.getState() == null){
+            attendance.setState(4);
+        }else {
+            if (hour < AttendanceUtil.clock_out_hour) {
+                if (hour < 14) {
+                    attendance.setState(4);
                 } else {
-                    attendance.setState(2);
+                    if (attendance.getState() == 1) {
+                        attendance.setState(3);
+                    } else {
+                        attendance.setState(2);
+                    }
                 }
+            } else {
+                attendance.setState(0);
             }
-        } else {
-            attendance.setState(0);
         }
         attendance.setClockOutTime(date);
         attendanceService.insertOrUpdateAttendance(attendance);

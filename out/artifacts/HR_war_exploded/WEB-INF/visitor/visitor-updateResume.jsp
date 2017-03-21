@@ -119,7 +119,6 @@
     </div>
 </div>
 </body>
-<script src="<%=basePath%>/static/js/jquery-3.1.1.js"></script>
 <script>
     $(function () {
         $("#month").click(countDay);

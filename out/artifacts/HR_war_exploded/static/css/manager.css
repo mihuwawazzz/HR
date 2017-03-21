@@ -200,3 +200,15 @@ a {
     border-radius: 10px;
     background: #2cff4c;
 }
+#userM{
+    margin-top: 30px;
+    margin-left: 50px;
+    height:60px;
+    margin-bottom: 150px;
+}
+#userM td,#userM th,.userMDetail td,.userMDetail th{
+    border: none;
+}
+.userMDetail{
+    margin-left: 50px;
+}

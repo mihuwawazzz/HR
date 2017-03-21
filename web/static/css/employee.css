@@ -171,3 +171,8 @@ a {
     max-height: 200px;
     text-indent: 3em;
 }
+
+#lastSalary-info td,#lastSalary-info th,#lastRP-info td,#lastRP-info th{
+    font-size: 17px;
+    text-align: center;
+}

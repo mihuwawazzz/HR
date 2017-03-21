@@ -16,4 +16,10 @@ public interface UserService {
     List<User> queryAllEmployees();
 
     List<User> queryByUsername(String username);
+
+    List<User> queryByUsernameAll(String username);
+
+    void deleteUser(Integer id);
+
+    List<User> queryAll();
 }

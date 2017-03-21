@@ -1,7 +1,24 @@
 package com.hr.service.interf;
 
 import com.hr.bean.RewardAndPunishment;
+import com.hr.bean.Salary;
+
+import java.util.List;
 
 public interface SalaryAndRewAndPunService {
     void saveOrUpdateRewardAndPunishment(RewardAndPunishment rewardAndPunishment);
+
+    List<RewardAndPunishment> queryByUserIdLastMonth(Integer userId);
+
+    void insertOpUpdateSalary(Salary salary);
+
+    List<Salary> querySalaryForMakeSalary();
+
+    Salary queryLastSalaryByUserId(Integer userId);
+
+    List<RewardAndPunishment> queryLastRewardAndPunishmentsByUserId(Integer userId);
+
+    RewardAndPunishment queryByID(Integer id);
+
+    List<RewardAndPunishment> queryRPByState();
 }

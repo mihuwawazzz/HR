@@ -7,10 +7,9 @@ public class RewardAndPunishment {
     private Integer userId;         //用户id
     private String reason;          //原因
     private Date date;              //时间
-    private Integer month;          //月份
     private String comment;         //备注
     private Double money;           //金额
-    private Integer state;          //状态：0：生效    1：投诉       2：取消
+    private Integer state;          //状态：0：生效    1：投诉    2：退回   3：不退回
 
     public RewardAndPunishment() {
     }
@@ -63,13 +62,6 @@ public class RewardAndPunishment {
         this.date = date;
     }
 
-    public Integer getMonth() {
-        return month;
-    }
-
-    public void setMonth(Integer month) {
-        this.month = month;
-    }
 
     public Double getMoney() {
         return money;
@@ -86,9 +78,9 @@ public class RewardAndPunishment {
         sb.append(", userId=").append(userId);
         sb.append(", reason='").append(reason).append('\'');
         sb.append(", date=").append(date);
-        sb.append(", month=").append(month);
         sb.append(", comment='").append(comment).append('\'');
         sb.append(", money=").append(money);
+        sb.append(", state=").append(state);
         sb.append('}');
         return sb.toString();
     }
