@@ -105,11 +105,21 @@ public class SalaryAndRewAndPunDaoImpl implements SalaryAndRewAndPunDao {
 
     @Override
     public RewardAndPunishment queryByID(Integer id) {
-        return hibernateTemplate.get(RewardAndPunishment.class,id);
+        return hibernateTemplate.get(RewardAndPunishment.class, id);
     }
 
     @Override
     public List<RewardAndPunishment> queryRPByState() {
         return (List<RewardAndPunishment>) hibernateTemplate.find("from RewardAndPunishment where state = 1");
+    }
+
+    @Override
+    public List<Salary> querySalariesByUserId(Integer userId) {
+        return (List<Salary>) hibernateTemplate.find("from Salary where userId=?", userId);
+    }
+
+    @Override
+    public List<RewardAndPunishment> queryRPsByUseId(Integer userId) {
+        return (List<RewardAndPunishment>) hibernateTemplate.find("from RewardAndPunishment where userId=?", userId);
     }
 }

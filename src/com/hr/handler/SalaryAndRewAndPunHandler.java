@@ -143,9 +143,6 @@ public class SalaryAndRewAndPunHandler {
     @ResponseBody
     @RequestMapping("/querySalaryForMakeSalary")
     public List<Salary> querySalaryForMakeSalary() {
-        Calendar calendar = Calendar.getInstance();
-        int year = calendar.get(Calendar.YEAR);
-        int month = calendar.get(Calendar.MONTH);
         return salaryAndRewAndPunService.querySalaryForMakeSalary();
     }
 
@@ -158,7 +155,7 @@ public class SalaryAndRewAndPunHandler {
         return "/employee/employee-salary";
     }
 
-    @RequestMapping("/updateRP/{userId}")
+    @RequestMapping("/updateRP")
     public String updateRP(HttpServletRequest request, Map<String, Object> map) {
         Integer userId = Integer.parseInt(request.getParameter("userId"));
         Integer id = Integer.parseInt(request.getParameter("id"));
@@ -189,7 +186,7 @@ public class SalaryAndRewAndPunHandler {
         rewardAndPunishment2.setState(2);
         rewardAndPunishment2.setReason("…œ‘¬ÕÀªÿ");
         rewardAndPunishment2.setMoney(-rewardAndPunishment.getMoney());
-        rewardAndPunishment2.setComment(rewardAndPunishment.getReason()+rewardAndPunishment.getDate());
+        rewardAndPunishment2.setComment(rewardAndPunishment.getDate() + ":" + rewardAndPunishment.getReason());
         rewardAndPunishment2.setDate(new Date());
         rewardAndPunishment2.setUserId(rewardAndPunishment.getUserId());
         salaryAndRewAndPunService.saveOrUpdateRewardAndPunishment(rewardAndPunishment);
@@ -207,5 +204,27 @@ public class SalaryAndRewAndPunHandler {
         return "/manager/manager-RP";
     }
 
+    @RequestMapping("/queryAllEmployees")
+    public String queryAllEmployees(Map<String, Object> map) {
+        List<User> users = userService.queryAllEmployees();
+        map.put("users", users);
+        return "/manager/manager-salaryAndRP";
+    }
+
+    @RequestMapping("/querySalariesByUserId")
+    public String querySalariesByUserId(Integer userId,Map<String, Object> map) {
+        List<Salary> salaries = salaryAndRewAndPunService.querySalariesByUserId(userId);
+        map.put("salaries",salaries);
+        queryAllEmployees(map);
+        return "/manager/manager-salaryAndRP";
+    }
+
+    @RequestMapping("/queryRPsByUserId")
+    public String queryRPsByUserId(Integer userId,Map<String, Object> map) {
+        List<RewardAndPunishment> rewardAndPunishments = salaryAndRewAndPunService.queryRPsByUseId(userId);
+        map.put("rewardAndPunishments",rewardAndPunishments);
+        queryAllEmployees(map);
+        return "/manager/manager-salaryAndRP";
+    }
 
 }

@@ -63,13 +63,13 @@
                     <div style="float:left;width: 150px">${department.name}</div>
                     <div style="width: 400px"><fmt:formatDate value="${department.createTime}" pattern="yyyy-MM-dd HH:mm"/></div>
                 </div>
-                <div hidden="hidden" style="width: 300px;padding-left: 190px">
+                <div hidden="hidden" style="width: 300px;padding-left: 170px">
                     <div style="float:left;width: 150px;color: blue;font-family: Hei">职位名称</div>
                     <div style="width: 300px;color: blue;font-family: Hei">创建时间</div>
                     <c:forEach var="position" items="${department.positions}">
                         <div>
                             <div style="float:left;width: 150px">${position.name}</div>
-                            <div style="width:300px"><fmt:formatDate value="${position.createTime}" pattern="yyyy-MM-dd HH:mm"/></div>
+                            <div style="width:350px"><fmt:formatDate value="${position.createTime}" pattern="yyyy-MM-dd HH:mm"/></div>
                         </div>
                     </c:forEach>
                 </div>

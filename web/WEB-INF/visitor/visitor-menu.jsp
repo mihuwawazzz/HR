@@ -13,9 +13,8 @@
     <div class="left"><a href="<%=basePath%>/resume/queryStateOfResume/${sessionScope.user.id}">面试信息</a></div>
 </div>
 <script>
-    $(function () {
-        setInterval(checkNote(),3*60*1000);
-    });
+    checkNote();
+    setInterval(checkNote,60000);
     function checkNote() {
         $.ajax({
             type: "get",

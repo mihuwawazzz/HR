@@ -111,6 +111,7 @@ public class User {
         sb.append(", birthday=").append(birthday);
         sb.append(", positionId=").append(positionId);
         sb.append(", gender=").append(gender);
+        sb.append(", basicSalary=").append(basicSalary);
         sb.append(", state=").append(state);
         sb.append('}');
         return sb.toString();

@@ -115,4 +115,11 @@ public class UserHandler {
         return "manager/manager-user";
     }
 
+    @RequestMapping(value = "/updateUser")
+    public String updateUser(User user) {
+        System.out.println(user);
+        userService.insertOrUpdate(user);
+        return "manager/manager-user";
+    }
+
 }

@@ -204,11 +204,26 @@ a {
     margin-top: 30px;
     margin-left: 50px;
     height:60px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 #userM td,#userM th,.userMDetail td,.userMDetail th{
     border: none;
 }
 .userMDetail{
     margin-left: 50px;
+}
+#salaryAndRP th,#salaryAndRP td{
+    border: none;
+}
+#salaryAndRP{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#salaryAndRPDetail th,#salaryAndRPDetail td{
+    border: none;
+}
+#salaryAndRP{
+    margin-top: 20px;
+    margin-left: 40px;
 }

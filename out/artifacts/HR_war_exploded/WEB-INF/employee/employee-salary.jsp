@@ -24,7 +24,7 @@
                 <tr>
                     <th>姓名</th>
                     <th>基本工资</th>
-                    <th>加班费</th>
+                    <%--<th>加班费</th>--%>
                     <th>奖惩</th>
                     <th>社保</th>
                     <th>总共</th>
@@ -32,13 +32,13 @@
                 </tr>
                 <tr>
                     <c:if test="${!empty requestScope.salary}">
-                        <td style="width: 70px">${sessionScope.user.username}</td>
-                        <td style="width: 80px">${requestScope.salary.basicSalary}元</td>
-                        <td style="width: 80px">${requestScope.salary.overtimePay}元</td>
-                        <td style="width: 80px">${requestScope.salary.rewardAndPunishment}元</td>
-                        <td style="width: 80px">${requestScope.salary.socialInsurance}元</td>
-                        <td style="width: 80px">${requestScope.salary.total}元</td>
-                        <td style="width: 140px"><fmt:formatDate
+                        <td style="width: 90px">${sessionScope.user.username}</td>
+                        <td style="width: 90px">${requestScope.salary.basicSalary}元</td>
+                        <%--<td style="width: 80px">${requestScope.salary.overtimePay}元</td>--%>
+                        <td style="width: 90px">${requestScope.salary.rewardAndPunishment}元</td>
+                        <td style="width: 90px">${requestScope.salary.socialInsurance}元</td>
+                        <td style="width: 90px">${requestScope.salary.total}元</td>
+                        <td style="width: 150px"><fmt:formatDate
                                 value="${requestScope.salary.settlementDate}" pattern="yyyy-MM-dd"/></td>
                     </c:if>
                 </tr>

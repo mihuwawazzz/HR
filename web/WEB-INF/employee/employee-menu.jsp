@@ -36,9 +36,8 @@
 <script src="<%=basePath%>/static/js/jquery-3.1.1.js"></script>
 <script src="<%=basePath%>/static/js/jquery-ui.js"></script>
 <script>
-    $(function () {
-        setInterval(checkNote(),60000);
-    });
+    checkNote();
+    setInterval(checkNote,60000);
     function checkNote() {
         $.ajax({
             type: "get",

@@ -20,6 +20,7 @@
         request.setAttribute("years", years);
         int[] months = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
         request.setAttribute("months", months);
+
     %>
     <div id="right">
         <c:choose>
@@ -51,7 +52,7 @@
         </c:choose>
         <div id="calendar">
             <table id="show">
-                <tr>
+                <tr id="firstLine">
                     <th colspan="7" id="calendar-title"></th>
                 </tr>
                 <tr>
@@ -65,32 +66,33 @@
                 </tr>
                 <script>
                     var date = new Date();
+                    var today = date.getDate();
                     var year = date.getFullYear();
                     var month = date.getMonth() + 1;
                     var days = new Date(year + "/" + (month + 1) + "/" + "0").getDate();
                     var firstDay = new Date(year + "/" + month + "/" + "1").getDay();
-                    var weekNum = 0;
-                    var day = 1;
-                    $("#calendar-title").text(year + "年" + month + "月")
-                    for (var i = -6; i < days + 1; i++) {
-                        i = i + 7;
-                        var wid = "week" + weekNum;
-                        $("#show").append("<tr></tr>")
-                        $("#show").children().last().attr("id", wid);
-                        for (var week = 0; week < 7; week++) {
-                            if (week < firstDay && day < firstDay) {
-                                $("#" + wid).append("<td></td>");
+                    var week2;
+                    if (days % 7 == 0 || firstDay == 0) {
+                        week2 = 4;
+                    } else {
+                        week2 = 5;
+                    }
+                    var dd = 1 - firstDay;
+                    $("#calendar-title").text(year + "年" + month + "月");
+                    for (var l = 0; l < week2; l++) {
+                        $("#show").append("<tr></tr>");
+                        for (var k = 1; k < 8; k++) {
+                            if (dd < 1) {
+                                $("#show").children().last().append("<td></td>");
                             } else {
-                                if (day < days + 1) {
-                                    $("#" + wid).append("<td>" + day + "</td>");
-                                    $("#show").children().children().last().attr("id", day);
-                                    day++;
+                                if (dd > days) {
+                                    $("#show").children().last().append("<td></td>");
                                 } else {
-                                    $("#" + wid).append("<td></td>");
+                                    $("#show").children().last().append("<td id=" + dd + ">" + dd + "</td>");
                                 }
                             }
+                            dd++;
                         }
-                        weekNum++;
                     }
                 </script>
                 <c:forEach var="attendance" items="${requestScope.attendances}">
@@ -98,6 +100,14 @@
                         <script>
                             var id = ${attendance.day}
                                 $("#" + id).css("background", "#ff0000");
+                        </script>
+                    </c:if>
+                    <c:if test="${attendance.state eq null}">
+                        <script>
+                            var id = ${attendance.day};
+                            if (id < today) {
+                                $("#" + id).css("background", "#ff0000");
+                            }
                         </script>
                     </c:if>
                     <c:if test="${attendance.state eq 3}">
@@ -169,10 +179,12 @@
                         <tr>
                             <td style="width: 40px">${requestScope.attendance.id}</td>
                             <td style="width: 215px">
-                                <fmt:formatDate value="${requestScope.attendance.clockInTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
+                                <fmt:formatDate value="${requestScope.attendance.clockInTime}"
+                                                pattern="yyyy-MM-dd HH:mm:ss"/>
                             </td>
                             <td style="width: 215px">
-                                <fmt:formatDate value="${requestScope.attendance.clockOutTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
+                                <fmt:formatDate value="${requestScope.attendance.clockOutTime}"
+                                                pattern="yyyy-MM-dd HH:mm:ss"/>
                             </td>
                         </tr>
                     </table>
@@ -186,6 +198,11 @@
     $(function () {
         $("#month").click(countDay);
         $("#year").click(countDay);
+        var week = new Date().getDay();
+        if (week == 0 || week == 6) {
+            $(".clock-in-out").find("input").attr("disabled", "disabled");
+            $(".clock-in-out").find("input").val("您辛苦了")
+        }
     });
 </script>
 </html>

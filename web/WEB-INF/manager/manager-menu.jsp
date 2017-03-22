@@ -33,6 +33,7 @@
         <div class="items">
             <a href="<%=basePath%>/salaryAndRewAndPun/query">薪资结算</a><br/>
             <a href="<%=basePath%>/salaryAndRewAndPun/queryRPByState">奖惩处理</a><br/>
+            <a href="<%=basePath%>/salaryAndRewAndPun/queryAllEmployees">工资奖惩</a><br/>
         </div>
     </div>
     <div id="left-train">

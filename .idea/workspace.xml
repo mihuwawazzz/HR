@@ -2,71 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b01da76-9bce-44c7-802e-f59abdb64360" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/bean/RewardAndPunishment.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/bean/RewardAndPunishment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/dao/SalaryAndRewAndPunDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/dao/SalaryAndRewAndPunDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/dao/interf/SalaryAndRewAndPunDao.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/dao/interf/SalaryAndRewAndPunDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/handler/AttendanceHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/handler/AttendanceHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/handler/SalaryAndRewAndPunHandler.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/handler/SalaryAndRewAndPunHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/service/SalaryAndRewAndPunServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/service/SalaryAndRewAndPunServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/service/interf/SalaryAndRewAndPunService.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/service/interf/SalaryAndRewAndPunService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/test/HibernateTest.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/test/HibernateTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/test/JavaTest.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/test/JavaTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/util/AttendanceUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/util/AttendanceUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/bean/RewardAndPunishment.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/bean/RewardAndPunishment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/dao/SalaryAndRewAndPunDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/dao/SalaryAndRewAndPunDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/dao/interf/SalaryAndRewAndPunDao.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/dao/interf/SalaryAndRewAndPunDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/handler/AttendanceHandler.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/handler/AttendanceHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/handler/SalaryAndRewAndPunHandler.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/handler/SalaryAndRewAndPunHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/service/SalaryAndRewAndPunServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/service/SalaryAndRewAndPunServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/service/interf/SalaryAndRewAndPunService.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/service/interf/SalaryAndRewAndPunService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/test/HibernateTest.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/test/HibernateTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/test/JavaTest.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/test/JavaTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/util/AttendanceUtil.class" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/util/AttendanceUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HR.iml" afterPath="$PROJECT_DIR$/HR.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/config/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/springApplicationContext.xml" afterPath="$PROJECT_DIR$/config/springApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/bean/hbm/rewardAndPunishment.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/com/hr/bean/hbm/rewardAndPunishment.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/springApplicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/classes/springApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/employee/employee-attendance.jsp" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/employee/employee-attendance.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/employee/employee-menu.jsp" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/employee/employee-menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/employee/employee-user.jsp" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/employee/employee-user.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/manager/manager-menu.jsp" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/manager/manager-menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/manager/manager-salary.jsp" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/manager/manager-salary.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/visitor/visitor-insertResume.jsp" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/visitor/visitor-insertResume.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/visitor/visitor-menu.jsp" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/visitor/visitor-menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/visitor/visitor-updateResume.jsp" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/WEB-INF/visitor/visitor-updateResume.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/static/css/employee.css" afterPath="$PROJECT_DIR$/out/artifacts/HR_war_exploded/static/css/employee.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/com/hr/bean/hbm/rewardAndPunishment.hbm.xml" afterPath="$PROJECT_DIR$/out/production/HR/com/hr/bean/hbm/rewardAndPunishment.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/out/production/HR/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HR/springApplicationContext.xml" afterPath="$PROJECT_DIR$/out/production/HR/springApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/bean/RewardAndPunishment.java" afterPath="$PROJECT_DIR$/src/com/hr/bean/RewardAndPunishment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/bean/User.java" afterPath="$PROJECT_DIR$/src/com/hr/bean/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/bean/hbm/rewardAndPunishment.hbm.xml" afterPath="$PROJECT_DIR$/src/com/hr/bean/hbm/rewardAndPunishment.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/dao/SalaryAndRewAndPunDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/hr/dao/SalaryAndRewAndPunDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/hr/dao/UserDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/dao/interf/SalaryAndRewAndPunDao.java" afterPath="$PROJECT_DIR$/src/com/hr/dao/interf/SalaryAndRewAndPunDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/dao/interf/UserDao.java" afterPath="$PROJECT_DIR$/src/com/hr/dao/interf/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/handler/AttendanceHandler.java" afterPath="$PROJECT_DIR$/src/com/hr/handler/AttendanceHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/handler/SalaryAndRewAndPunHandler.java" afterPath="$PROJECT_DIR$/src/com/hr/handler/SalaryAndRewAndPunHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/handler/UserHandler.java" afterPath="$PROJECT_DIR$/src/com/hr/handler/UserHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/service/SalaryAndRewAndPunServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hr/service/SalaryAndRewAndPunServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hr/service/UserServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/service/interf/SalaryAndRewAndPunService.java" afterPath="$PROJECT_DIR$/src/com/hr/service/interf/SalaryAndRewAndPunService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/service/interf/UserService.java" afterPath="$PROJECT_DIR$/src/com/hr/service/interf/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/test/HibernateTest.java" afterPath="$PROJECT_DIR$/src/com/hr/test/HibernateTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/test/JavaTest.java" afterPath="$PROJECT_DIR$/src/com/hr/test/JavaTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hr/util/AttendanceUtil.java" afterPath="$PROJECT_DIR$/src/com/hr/util/AttendanceUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/employee/employee-attendance.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/employee/employee-attendance.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/employee/employee-menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/employee/employee-menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/employee/employee-salary.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/employee/employee-salary.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/employee/employee-user.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/employee/employee-user.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/manager/manager-RP.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/manager/manager-RP.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/manager/manager-menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/manager/manager-menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/manager/manager-salary.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/manager/manager-salary.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-insertResume.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-insertResume.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/manager/manager-user.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/manager/manager-user.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-updateResume.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-updateResume.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/static/css/employee.css" afterPath="$PROJECT_DIR$/web/static/css/employee.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/static/css/manager.css" afterPath="$PROJECT_DIR$/web/static/css/manager.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -83,22 +33,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SalaryAndRewAndPunHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SalaryAndRewAndPunHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/hr/handler/SalaryAndRewAndPunHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="195" column="33" lean-forward="true" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manager-user.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-user.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="198" column="18" lean-forward="true" selection-start-line="198" selection-start-column="18" selection-end-line="198" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="-140">
+              <caret line="183" column="38" lean-forward="false" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+              <folding>
+                <element signature="e#6110#6111#0" expanded="true" />
+                <element signature="e#6185#6186#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,33 +66,34 @@
         <option value="$PROJECT_DIR$/src/com/hr/handler/AttendanceHandler.java" />
         <option value="$PROJECT_DIR$/src/com/hr/test/HibernateTest.java" />
         <option value="$PROJECT_DIR$/config/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/employee/employee-user.jsp" />
         <option value="$PROJECT_DIR$/web/static/css/employee.css" />
         <option value="$PROJECT_DIR$/web/static/js/myJs.js" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/employee/employee-attendance.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-updateResume.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-menu.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/employee/employee-salary.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/employee/employee-menu.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager.jsp" />
-        <option value="$PROJECT_DIR$/src/com/hr/bean/User.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager-salary.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-insertResume.jsp" />
-        <option value="$PROJECT_DIR$/web/static/css/manager.css" />
-        <option value="$PROJECT_DIR$/src/com/hr/handler/UserHandler.java" />
         <option value="$PROJECT_DIR$/src/com/hr/service/interf/UserService.java" />
         <option value="$PROJECT_DIR$/src/com/hr/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/hr/dao/interf/UserDao.java" />
         <option value="$PROJECT_DIR$/src/com/hr/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager-menu.jsp" />
+        <option value="$PROJECT_DIR$/src/com/hr/bean/RewardAndPunishment.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager-RP.jsp" />
+        <option value="$PROJECT_DIR$/src/com/hr/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/com/hr/handler/UserHandler.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager-user.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/employee/employee-attendance.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/employee/employee-user.jsp" />
         <option value="$PROJECT_DIR$/src/com/hr/service/interf/SalaryAndRewAndPunService.java" />
         <option value="$PROJECT_DIR$/src/com/hr/service/SalaryAndRewAndPunServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/hr/dao/interf/SalaryAndRewAndPunDao.java" />
         <option value="$PROJECT_DIR$/src/com/hr/dao/SalaryAndRewAndPunDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/hr/bean/RewardAndPunishment.java" />
         <option value="$PROJECT_DIR$/src/com/hr/handler/SalaryAndRewAndPunHandler.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager-RP.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager-user.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/employee/employee-salary.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/visitor/visitor-menu.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/employee/employee-menu.jsp" />
+        <option value="$PROJECT_DIR$/web/static/css/manager.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager-menu.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/manager/manager-salaryAndRP.jsp" />
       </list>
     </option>
   </component>
@@ -187,9 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -526,32 +467,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="converter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -620,6 +535,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -968,6 +886,7 @@
       <workItem from="1490056960534" duration="4974000" />
       <workItem from="1490062347375" duration="15713000" />
       <workItem from="1490092983073" duration="14812000" />
+      <workItem from="1490143836856" duration="29299000" />
     </task>
     <servers />
   </component>
@@ -1004,7 +923,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35499000" />
+    <option name="totallyTimeSpent" value="64798000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1016,7 +935,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="802" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="802" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1027,12 +946,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3009576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29822162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22708334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18888889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1080,22 +999,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hr/bean/RewardAndPunishment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="968">
@@ -1185,9 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="564">
           <caret line="48" column="49" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="48" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1233,24 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-attendance.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3278">
-          <caret line="149" column="30" lean-forward="true" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-381">
-          <caret line="63" column="75" lean-forward="false" selection-start-line="63" selection-start-column="75" selection-end-line="63" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-training.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1613">
@@ -1275,37 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/visitor/visitor-menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/js/myJs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding>
-            <marker date="1490093787000" expanded="true" signature="254:537" ph="..." />
-            <marker date="1490093787000" expanded="true" signature="564:673" ph="..." />
-            <marker date="1490093787000" expanded="true" signature="700:711" ph="..." />
-            <marker date="1490093787000" expanded="true" signature="757:802" ph="..." />
-            <marker date="1490093787000" expanded="true" signature="865:875" ph="..." />
-            <marker date="1490093787000" expanded="true" signature="940:973" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-salary.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -1322,14 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/css/manager.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="206" column="22" lean-forward="false" selection-start-line="206" selection-start-column="22" selection-end-line="206" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/visitor/visitor-insertResume.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1338,19 +1181,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hr/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hr/converter/BirthdayConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1375,8 +1209,8 @@
         <state relative-caret-position="389">
           <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
           <folding>
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
+            <element signature="e#1618#1619#0" expanded="false" />
+            <element signature="e#1659#1660#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1389,71 +1223,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hr/handler/UserHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-          <folding>
-            <element signature="e#3791#3792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hr/service/interf/SalaryAndRewAndPunService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hr/service/SalaryAndRewAndPunServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
-          <folding>
-            <element signature="e#1889#1890#0" expanded="true" />
-            <element signature="e#1950#1951#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hr/dao/interf/SalaryAndRewAndPunDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-salary.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="83" column="14" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="83" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-resume.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="40" column="28" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="40" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hr/dao/SalaryAndRewAndPunDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="106" column="36" lean-forward="true" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1474,38 +1247,213 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-menu.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-RP.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+        <state relative-caret-position="199">
+          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-RP.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/hr/bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+        <state relative-caret-position="198">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/js/myJs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="74" selection-end-column="1" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1490093787000" expanded="true" signature="254:537" ph="..." />
+            <marker date="1490093787000" expanded="true" signature="564:673" ph="..." />
+            <marker date="1490093787000" expanded="true" signature="700:711" ph="..." />
+            <marker date="1490093787000" expanded="true" signature="757:802" ph="..." />
+            <marker date="1490093787000" expanded="true" signature="865:875" ph="..." />
+            <marker date="1490093787000" expanded="true" signature="940:973" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hr/handler/SalaryAndRewAndPunHandler.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="195" column="33" lean-forward="true" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
+        <state relative-caret-position="25">
+          <caret line="204" column="16" lean-forward="true" selection-start-line="204" selection-start-column="16" selection-end-line="204" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#2;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-attendance.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="84" column="38" lean-forward="false" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1490166929000" expanded="false" signature="873:2070" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hr/handler/UserHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="103" column="38" lean-forward="false" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-user.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="198" column="18" lean-forward="true" selection-start-line="198" selection-start-column="18" selection-end-line="198" selection-end-column="18" />
+        <state relative-caret-position="176">
+          <caret line="68" column="14" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="68" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hr/dao/interf/SalaryAndRewAndPunDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hr/service/SalaryAndRewAndPunServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="67" column="47" lean-forward="false" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hr/service/interf/SalaryAndRewAndPunService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/visitor/visitor-menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/employee/employee-salary.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="78" column="29" lean-forward="false" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="35" column="77" lean-forward="false" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/css/manager.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="228" column="1" lean-forward="false" selection-start-line="228" selection-start-column="1" selection-end-line="228" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/manager-salaryAndRP.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#1;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#1;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#1;n#table#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hr/dao/SalaryAndRewAndPunDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hr/handler/SalaryAndRewAndPunHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="183" column="38" lean-forward="false" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+          <folding>
+            <element signature="e#6110#6111#0" expanded="true" />
+            <element signature="e#6185#6186#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

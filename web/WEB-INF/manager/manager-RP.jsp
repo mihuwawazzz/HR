@@ -29,12 +29,13 @@
                         <div class="resume">
                             <c:forEach var="user" items="${requestScope.users}">
                                 <c:if test="${user.id eq rewardAndPunishment.userId}">
-                                    用户名：${user.username}<br/>
+                                    姓名：${user.username}<br/>
                                 </c:if>
                             </c:forEach>
-                            奖惩原因：${rewardAndPunishment.reason}<br/>
-                            金额：${rewardAndPunishment.money}<br/>
+                            原因：${rewardAndPunishment.reason}<br/>
+                            金额：${rewardAndPunishment.money}元<br/>
                             时间：<fmt:formatDate value="${rewardAndPunishment.date}" pattern="yyyy-MM-dd"/><br/>
+                            投诉理由：${rewardAndPunishment.comment}<br/>
                             <a href="<%=basePath%>/salaryAndRewAndPun/backRP/${rewardAndPunishment.id}">
                                 <input class="passInterview" type="button" value="理由充分，下月退回">
                             </a>

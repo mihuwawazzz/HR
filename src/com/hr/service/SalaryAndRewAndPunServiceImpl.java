@@ -57,4 +57,14 @@ public class SalaryAndRewAndPunServiceImpl implements SalaryAndRewAndPunService{
     public List<RewardAndPunishment> queryRPByState() {
         return salaryAndRewAndPunDao.queryRPByState();
     }
+
+    @Override
+    public List<Salary> querySalariesByUserId(Integer userId) {
+        return salaryAndRewAndPunDao.querySalariesByUserId(userId);
+    }
+
+    @Override
+    public List<RewardAndPunishment> queryRPsByUseId(Integer userId) {
+        return salaryAndRewAndPunDao.queryRPsByUseId(userId);
+    }
 }

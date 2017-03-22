@@ -21,4 +21,8 @@ public interface SalaryAndRewAndPunDao {
     RewardAndPunishment queryByID(Integer id);
 
     List<RewardAndPunishment> queryRPByState();
+
+    List<Salary> querySalariesByUserId(Integer userId);
+
+    List<RewardAndPunishment> queryRPsByUseId(Integer userId);
 }
