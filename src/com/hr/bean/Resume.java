@@ -6,6 +6,20 @@ import java.util.Date;
  * 简历类
  */
 public class Resume {
+    public static final Integer GENDER_MALE = 1;                //男
+    public static final Integer GENDER_FEMALE = 0;              //女
+
+    public static final Integer RESUME_UNDELIVER = -1;          //简历还未投递
+    public static final Integer RESUME_DELIVER = 0;             //简历已经投递
+    public static final Integer RESUME_PASS = 1;                //简历通过
+    public static final Integer RESUME_UNPASS = -2;             //简历未通过
+
+    public static final Integer INTERVIEW_UNACCEPT = 0;         //面试未接受
+    public static final Integer INTERVIEW_ACCEPT = 1;           //面试已接受
+    public static final Integer INTERVIEW_PASS = 2;             //面试通过
+    public static final Integer INTERVIEW_UNPASS = -1;          //面试未通过或者不接受
+
+
     private Integer id;                    //简历id
     private Integer userId;                //用户id
     private String email;                  //邮箱
@@ -15,7 +29,7 @@ public class Resume {
     private Integer positionId;            //应聘职位
     private String workExperience;         //工作经历
     private String introduction;           //自我介绍
-    private Integer state;                 //-1：还未投递   0：未阅(已投递)    1：简历通过    -2：简历未通过
+    private Integer state;                 //-1：还未投递    0：已投递    1：简历通过    -2：简历未通过
     private Integer interviewState;        //0：面试未接受    1:面试已接受     2：面试通过    -1：面试未通过或不接受
     private String interviewNote;          //面试地址
 

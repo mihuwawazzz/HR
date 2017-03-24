@@ -5,7 +5,14 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.Date;
 import java.util.Set;
 
+/**
+ * 培训类
+ */
 public class Training {
+    public static final Integer UNBEGIN = 0;        //还未开始
+    public static final Integer FINISH = 1;         //结束
+    public static final Integer CANCEL = -1;        //取消
+
     private Integer id;                                     //培训id
     private String title;                                   //标题
     private String lecturer;                                //讲师
@@ -82,7 +89,8 @@ public class Training {
     public void setBeginDate(Date beginDate) {
         this.beginDate = beginDate;
     }
-@JsonIgnore
+
+    @JsonIgnore
     public Set<TrainingNotice> getTrainingNotices() {
         return trainingNotices;
     }

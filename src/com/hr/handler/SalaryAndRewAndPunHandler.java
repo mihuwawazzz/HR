@@ -48,7 +48,7 @@ public class SalaryAndRewAndPunHandler {
         for (RewardAndPunishment rewardAndPunishment : rewardAndPunishments.getRewardAndPunishments()) {
             rewardAndPunishment.setUserId(userId);
             rewardAndPunishment.setDate(new Date());
-            rewardAndPunishment.setState(0);
+            rewardAndPunishment.setState(RewardAndPunishment.TAKE_EFFECT);
             salaryAndRewAndPunService.saveOrUpdateRewardAndPunishment(rewardAndPunishment);
         }
         return "/manager/manager-salary";
@@ -72,22 +72,22 @@ public class SalaryAndRewAndPunHandler {
                 } catch (Exception ignored) {
                 }
                 RP.setUserId(user.getId());
-                RP.setState(0);
+                RP.setState(RewardAndPunishment.TAKE_EFFECT);
                 RP.setDate(date);
-                if (attendance.getState() == null || attendance.getState() == 4) {
+                if (attendance.getState() == null || attendance.getState().equals(Attendance.ABSENT)) {
                     RP.setReason("旷工");
                     double money = Math.round(user.getBasicSalary() / days.size());
                     RP.setMoney(-money);
                     salaryAndRewAndPunService.saveOrUpdateRewardAndPunishment(RP);
-                } else if (attendance.getState() == 1) {
+                } else if (attendance.getState().equals(Attendance.ARRIVE_LATE)) {
                     RP.setReason("迟到");
                     RP.setMoney(-80.0);
                     salaryAndRewAndPunService.saveOrUpdateRewardAndPunishment(RP);
-                } else if (attendance.getState() == 2) {
+                } else if (attendance.getState().equals(Attendance.LEAVE_EARLY)) {
                     RP.setReason("早退");
                     RP.setMoney(-80.0);
                     salaryAndRewAndPunService.saveOrUpdateRewardAndPunishment(RP);
-                } else if (attendance.getState() == 3) {
+                } else if (attendance.getState().equals(Attendance.ARRIVE_LATE_LEAVE_EARLY)) {
                     RP.setReason("迟到并且早退");
                     RP.setMoney(-160.0);
                     salaryAndRewAndPunService.saveOrUpdateRewardAndPunishment(RP);
@@ -101,7 +101,7 @@ public class SalaryAndRewAndPunHandler {
     private void insertSalaryT(List<User> users) {
         for (User user : users) {
             Salary salary = new Salary();
-            Double rewardAndPunishment = 0.0;
+            double rewardAndPunishment = 0;
             List<RewardAndPunishment> rewardAndPunishments = salaryAndRewAndPunService.queryByUserIdLastMonth(user.getId());
             System.out.println(rewardAndPunishments);
             for (RewardAndPunishment r : rewardAndPunishments) {
@@ -112,14 +112,17 @@ public class SalaryAndRewAndPunHandler {
             salary.setRewardAndPunishment(rewardAndPunishment);
             double totalBefore = user.getBasicSalary() + rewardAndPunishment;
             double socialInsurance = 0;
-            if (totalBefore > 3500) {
-                if (totalBefore < 8000) {
-                    socialInsurance = totalBefore * 0.08;
+            if (totalBefore > Salary.SOCIAL_INSURANCE_LEVEL1) {
+                if (totalBefore < Salary.SOCIAL_INSURANCE_LEVEL2) {
+                    socialInsurance = totalBefore * Salary.PROPORTION_OF_SOCIAL_INSURANCE_LEVEL1;
                 } else {
-                    socialInsurance = totalBefore * 0.15;
+                    socialInsurance = totalBefore * Salary.PROPORTION_OF_SOCIAL_INSURANCE_LEVEL2;
                 }
             }
             salary.setSocialInsurance(-socialInsurance);
+            if (totalBefore < 0) {
+                totalBefore = 0;
+            }
             salary.setTotal(totalBefore + socialInsurance);
             salary.setSettlementDate(new Date());
             salaryAndRewAndPunService.insertOpUpdateSalary(salary);
@@ -162,7 +165,7 @@ public class SalaryAndRewAndPunHandler {
         String comment = request.getParameter("comment");
         RewardAndPunishment rewardAndPunishment = salaryAndRewAndPunService.queryByID(id);
         rewardAndPunishment.setComment(comment);
-        rewardAndPunishment.setState(1);
+        rewardAndPunishment.setState(RewardAndPunishment.COMPLIANT);
         salaryAndRewAndPunService.saveOrUpdateRewardAndPunishment(rewardAndPunishment);
         queryLastSalaryAndRPByUserId(userId, map);
         return "/employee/employee-salary";
@@ -181,9 +184,9 @@ public class SalaryAndRewAndPunHandler {
     @RequestMapping("/backRP/{id}")
     public String backRP(@PathVariable("id") Integer id, Map<String, Object> map) {
         RewardAndPunishment rewardAndPunishment = salaryAndRewAndPunService.queryByID(id);
-        rewardAndPunishment.setState(2);
+        rewardAndPunishment.setState(RewardAndPunishment.TURN_BACK);
         RewardAndPunishment rewardAndPunishment2 = new RewardAndPunishment();
-        rewardAndPunishment2.setState(2);
+        rewardAndPunishment2.setState(RewardAndPunishment.TURN_BACK);
         rewardAndPunishment2.setReason("上月退回");
         rewardAndPunishment2.setMoney(-rewardAndPunishment.getMoney());
         rewardAndPunishment2.setComment(rewardAndPunishment.getDate() + ":" + rewardAndPunishment.getReason());
@@ -198,7 +201,7 @@ public class SalaryAndRewAndPunHandler {
     @RequestMapping("/unBackRP/{id}")
     public String unBackRP(@PathVariable("id") Integer id, Map<String, Object> map) {
         RewardAndPunishment rewardAndPunishment = salaryAndRewAndPunService.queryByID(id);
-        rewardAndPunishment.setState(3);
+        rewardAndPunishment.setState(RewardAndPunishment.UNTURN_BACK);
         salaryAndRewAndPunService.saveOrUpdateRewardAndPunishment(rewardAndPunishment);
         queryRPByState(map);
         return "/manager/manager-RP";
@@ -212,17 +215,17 @@ public class SalaryAndRewAndPunHandler {
     }
 
     @RequestMapping("/querySalariesByUserId")
-    public String querySalariesByUserId(Integer userId,Map<String, Object> map) {
+    public String querySalariesByUserId(Integer userId, Map<String, Object> map) {
         List<Salary> salaries = salaryAndRewAndPunService.querySalariesByUserId(userId);
-        map.put("salaries",salaries);
+        map.put("salaries", salaries);
         queryAllEmployees(map);
         return "/manager/manager-salaryAndRP";
     }
 
     @RequestMapping("/queryRPsByUserId")
-    public String queryRPsByUserId(Integer userId,Map<String, Object> map) {
+    public String queryRPsByUserId(Integer userId, Map<String, Object> map) {
         List<RewardAndPunishment> rewardAndPunishments = salaryAndRewAndPunService.queryRPsByUseId(userId);
-        map.put("rewardAndPunishments",rewardAndPunishments);
+        map.put("rewardAndPunishments", rewardAndPunishments);
         queryAllEmployees(map);
         return "/manager/manager-salaryAndRP";
     }

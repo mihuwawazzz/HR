@@ -56,7 +56,7 @@ public class ResumeHandler {
 
     @RequestMapping(value = "/insertOrUpdate", method = RequestMethod.POST)
     public String insertOrUpdate(Resume resume) {
-        resume.setState(-1);
+        resume.setState(Resume.INTERVIEW_UNPASS);
         resumeService.insertOrUpdate(resume);
         return "visitor/visitor";
     }
@@ -82,7 +82,7 @@ public class ResumeHandler {
 
     @RequestMapping(value = "/queryResumeByState", method = RequestMethod.GET)
     public String queryResumeByState(Map<String, Object> map) {
-        List<Resume> resumes = resumeService.queryResumeBySate(0);
+        List<Resume> resumes = resumeService.queryResumeBySate(Resume.RESUME_DELIVER);
         List<Position> positions = positionService.queryAll();
         map.put("positions", positions);
         map.put("resumes", resumes);
@@ -103,8 +103,8 @@ public class ResumeHandler {
     public String updatePassResume(Resume resume, Map<String, Object> map) {
 //        请于2017-03-30上午9点，到浦东新区松涛路489号B座进行面试！
         Resume resume1 = resumeService.queryById(resume.getId());
-        resume1.setState(1);
-        resume1.setInterviewState(0);
+        resume1.setState(Resume.INTERVIEW_PASS);
+        resume1.setInterviewState(Resume.INTERVIEW_UNACCEPT);
         resume1.setInterviewNote(resume.getInterviewNote());
         resumeService.insertOrUpdate(resume1);
         queryResumeByState(map);
@@ -144,14 +144,14 @@ public class ResumeHandler {
         Integer id = Integer.parseInt(request.getParameter("id"));
         double basicSalary = Double.parseDouble(request.getParameter("basicSalary"));
         Resume resume = resumeService.queryById(id);
-        resume.setInterviewState(2);
+        resume.setInterviewState(Resume.INTERVIEW_PASS);
         resumeService.insertOrUpdate(resume);
         User user = userService.queryById(resume.getUserId());
         user.setUsername(resume.getUsername());
-        user.setLevel(1);
+        user.setLevel(User.EMPLOYEE);
         user.setBirthday(resume.getBirthday());
         user.setPositionId(resume.getPositionId());
-        user.setState(1);
+        user.setState(User.ON_JOB);
         user.setGender(resume.getGender());
         user.setBasicSalary(basicSalary);
         userService.insertOrUpdate(user);
@@ -163,7 +163,7 @@ public class ResumeHandler {
     public String unPassInterviewById(HttpServletRequest request, Map<String, Object> map) {
         Integer id = Integer.parseInt(request.getParameter("id"));
         Resume resume = resumeService.queryById(id);
-        resume.setInterviewState(-1);
+        resume.setInterviewState(Resume.INTERVIEW_UNPASS);
         queryResumeByInterviewState(map);
         return "manager/manager-interview";
     }

@@ -71,7 +71,7 @@ public class TrainingHandler {
             trainingService.update(training);
             List<TrainingNotice> trainingNotices = trainingNoticeService.queryByTraining(training);
             for (TrainingNotice trainingNotice : trainingNotices) {
-                trainingNotice.setState(2);
+                trainingNotice.setState(TrainingNotice.UPDATE);
                 trainingNoticeService.insertOrUpdate(trainingNotice);
             }
         }
@@ -85,12 +85,12 @@ public class TrainingHandler {
         Integer id = Integer.parseInt(request.getParameter("id"));
         Training training = trainingService.queryById(id);
         if (training != null) {
-            training.setState(-1);
+            training.setState(Training.CANCEL);
             trainingService.update(training);
         }
         List<TrainingNotice> trainingNotices = trainingNoticeService.queryByTraining(training);
         for (TrainingNotice trainingNotice : trainingNotices) {
-            trainingNotice.setState(3);
+            trainingNotice.setState(TrainingNotice.CANCEL);
             trainingNoticeService.insertOrUpdate(trainingNotice);
         }
         queryAllBeforeCurrentTime(map);
@@ -111,7 +111,7 @@ public class TrainingHandler {
         String trainingMinute = request.getParameter("trainingMinute");
         String trainingDes = "";
         training.setBeginDate(converterBeginDate(trainingDay, trainingHour, trainingMinute));
-        training.setState(0);
+        training.setState(Training.UNBEGIN);
         Integer trainingId = trainingService.insert(training);
         Training training1 = trainingService.queryById(trainingId);
         for (String de : trainingDepartments) {
@@ -124,7 +124,7 @@ public class TrainingHandler {
                 for (User user : users) {
                     TrainingNotice trainingNotice = new TrainingNotice();
                     trainingNotice.setUserId(user.getId());
-                    trainingNotice.setState(0);
+                    trainingNotice.setState(Training.UNBEGIN);
                     trainingNotice.setTraining(training1);
                     trainingNoticeService.insertOrUpdate(trainingNotice);
                 }

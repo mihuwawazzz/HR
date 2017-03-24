@@ -3,10 +3,12 @@ package com.hr.bean;
 import java.util.List;
 
 /**
- * 这个类用于分页查询用的，超酷
+ * 这个类用于分页查询用的
  * @param <T>
  */
 public class Page<T> {
+    public static final int PAGE_SIZE = 4;
+
     private int currentPage;        //当前页面
     private List<T> list;           //查询的集合
     private int pageSize;           //每页行数

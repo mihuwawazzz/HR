@@ -2,7 +2,15 @@ package com.hr.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+/**
+ * 培训通知类
+ */
 public class TrainingNotice {
+    public static final Integer UNCHECK = 0;        //未阅
+    public static final Integer CHECK = 1;          //已阅
+    public static final Integer UPDATE = 2;         //更新
+    public static final Integer CANCEL = 3;         //取消
+
     private Integer id;                 //培训通知的id
     private Integer userId;             //用户id
     private Integer state;              //状态：0：未阅       1：已阅    2：更新        3：取消
@@ -41,15 +49,5 @@ public class TrainingNotice {
 
     public void setTraining(Training training) {
         this.training = training;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("TrainingNotice{");
-        sb.append("id=").append(id);
-        sb.append(", userId=").append(userId);
-        sb.append(", state=").append(state);
-        sb.append('}');
-        return sb.toString();
     }
 }

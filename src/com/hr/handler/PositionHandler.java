@@ -49,7 +49,7 @@ public class PositionHandler {
             currentPage = 1;
         }
         long maxRows = positionService.queryAll().size();
-        Page<Position> positionPage = new Page<>(currentPage, null, 4, maxRows);
+        Page<Position> positionPage = new Page<>(currentPage, null, Page.PAGE_SIZE, maxRows);
         positionPage.setCurrentPage(positionPage.getCurrentPage());
         List<Position> positions = positionService.queryByPage(positionPage);
         map.put("page", positionPage);

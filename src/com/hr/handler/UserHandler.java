@@ -35,9 +35,13 @@ public class UserHandler {
     private PositionService positionService;
 
     @RequestMapping(value = "/insertOrUpdate", method = RequestMethod.POST)
-    public String insertOrUpdate(User user) {
+    public String insertOrUpdate(User user, HttpSession session) {
+        if(user == null){
+            return "redirect:/register.jsp";
+        }
         user.setLevel(0);
         userService.insertOrUpdate(user);
+        session.setAttribute("user", user);
         return "redirect:/login.jsp";
     }
 
@@ -47,19 +51,19 @@ public class UserHandler {
         return userService.queryByEmail(email);
     }
 
-    @RequestMapping(value = "/queryByUser", method = RequestMethod.POST)
+    @RequestMapping(value = "/queryByUser")
     public String queryByUser(User user, Map<String, Object> map, HttpSession session) {
         user = userService.queryByUser(user);
         if (user == null) {
             map.put("error", "!邮箱或者密码错误!");
-            return "redirect:/login.jsp";
+            return "forward:/login.jsp";
         } else {
             Integer level = user.getLevel();
             session.setAttribute("user", user);
-            if (level == 2) {
+            if (level.equals(User.MANAGER)) {
                 //管理员
                 return "manager/manager";
-            } else if (level == 1) {
+            } else if (level.equals(User.EMPLOYEE)) {
                 //普通员工
                 return "employee/employee";
             } else {
@@ -69,7 +73,7 @@ public class UserHandler {
         }
     }
 
-    @RequestMapping(value = "/queryDepAndPosi", method = RequestMethod.GET)
+    @RequestMapping(value = "/queryDepAndPosi")
     public String queryDepAndPosi(Map<String, Object> map) {
         List<Department> departments = departmentService.queryAllFetch();
         map.put("departments", departments);

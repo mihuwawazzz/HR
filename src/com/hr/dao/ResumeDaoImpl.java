@@ -49,6 +49,6 @@ public class ResumeDaoImpl implements ResumeDao {
 
     @Override
     public List<Resume> queryResumeByInterviewState() {
-        return (List<Resume>) hibernateTemplate.find("from Resume where interviewState = 1");
+        return (List<Resume>) hibernateTemplate.find("from Resume where interviewState = ?",Resume.INTERVIEW_ACCEPT);
     }
 }

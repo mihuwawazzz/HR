@@ -33,11 +33,11 @@ public class AttendanceHandler {
         Attendance attendance = initAttendance(userId);
         Date date = new Date();
         int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-        if (hour > AttendanceUtil.clock_in_hour - 1) {
-            if (hour > 11) {
-                attendance.setState(4);
+        if (hour > Attendance.CLOCK_IN_HOUR - 1) {
+            if (hour > Attendance.CLOCK_IN_ABSENT_HOUR) {
+                attendance.setState(Attendance.ABSENT);
             } else {
-                attendance.setState(1);
+                attendance.setState(Attendance.ARRIVE_LATE);
             }
         }
         attendance.setClockInTime(date);
@@ -52,20 +52,20 @@ public class AttendanceHandler {
         Date date = new Date();
         int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
         if(attendance.getState() == null){
-            attendance.setState(4);
+            attendance.setState(Attendance.ABSENT);
         }else {
-            if (hour < AttendanceUtil.clock_out_hour) {
-                if (hour < 14) {
-                    attendance.setState(4);
+            if (hour < Attendance.CLOCK_OUT_HOUR) {
+                if (hour < Attendance.CLOCK_OUT_ABSENT_HOUR) {
+                    attendance.setState(Attendance.ABSENT);
                 } else {
-                    if (attendance.getState() == 1) {
-                        attendance.setState(3);
+                    if (attendance.getState().equals(Attendance.ARRIVE_LATE)) {
+                        attendance.setState(Attendance.ARRIVE_LATE_LEAVE_EARLY);
                     } else {
-                        attendance.setState(2);
+                        attendance.setState(Attendance.LEAVE_EARLY);
                     }
                 }
             } else {
-                attendance.setState(0);
+                attendance.setState(Attendance.NORMAL);
             }
         }
         attendance.setClockOutTime(date);

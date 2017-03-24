@@ -6,6 +6,17 @@ import java.util.Date;
  * 用户类
  */
 public class User {
+    public static final Integer VISITOR = 0;            //游客
+    public static final Integer EMPLOYEE = 1;           //员工
+    public static final Integer MANAGER = 2;            //管理员
+
+    public static final Integer GENDER_MALE = 1;        //男
+    public static final Integer GENDER_FEMALE = 0;      //女
+
+    public static final Integer ON_JOB = 1;              //在职
+    public static final Integer LEAVE_JOB = 0;           //离职
+    public static final Integer RETIRE = 2;              //退休
+
     private Integer id;             //用户id
     private String email;           //邮箱
     private String username;        //用户名
@@ -98,22 +109,5 @@ public class User {
 
     public void setState(Integer state) {
         this.state = state;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("User{");
-        sb.append("id=").append(id);
-        sb.append(", email='").append(email).append('\'');
-        sb.append(", username='").append(username).append('\'');
-        sb.append(", password='").append(password).append('\'');
-        sb.append(", level=").append(level);
-        sb.append(", birthday=").append(birthday);
-        sb.append(", positionId=").append(positionId);
-        sb.append(", gender=").append(gender);
-        sb.append(", basicSalary=").append(basicSalary);
-        sb.append(", state=").append(state);
-        sb.append('}');
-        return sb.toString();
     }
 }

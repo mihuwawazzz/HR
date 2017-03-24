@@ -62,16 +62,6 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-
-    <!--spring-->
-    <!--<listener>-->
-    <!--<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
-    <!--</listener>-->
-    <!--<context-param>-->
-        <!--<param-name>contextConfigLocation</param-name>-->
-        <!--<param-value>classpath:springApplicationContext.xml</param-value>-->
-    <!--</context-param>-->
-
     <welcome-file-list>
         <welcome-file>/login.jsp</welcome-file>
     </welcome-file-list>

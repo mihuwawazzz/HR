@@ -6,6 +6,9 @@ import org.springframework.core.convert.converter.Converter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * 用户封装DATE类型的转换器
+ */
 public class BirthdayConverter implements Converter<String[], Date> {
 
     @Override

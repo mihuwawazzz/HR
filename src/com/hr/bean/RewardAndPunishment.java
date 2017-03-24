@@ -2,7 +2,15 @@ package com.hr.bean;
 
 import java.util.Date;
 
+/**
+ * 奖惩类
+ */
 public class RewardAndPunishment {
+    public static final Integer TAKE_EFFECT = 0;        //生效
+    public static final Integer COMPLIANT = 1;          //投诉
+    public static final Integer TURN_BACK = 2;          //退回
+    public static final Integer UNTURN_BACK = 3;        //不退回
+
     private Integer id;             //奖惩id
     private Integer userId;         //用户id
     private String reason;          //原因

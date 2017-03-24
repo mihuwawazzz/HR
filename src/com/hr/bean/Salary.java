@@ -2,7 +2,15 @@ package com.hr.bean;
 
 import java.util.Date;
 
+/**
+ * 工资类
+ */
 public class Salary {
+    public static final Double SOCIAL_INSURANCE_LEVEL1 = 3500.0;                //缴纳社保基数等级1
+    public static final Double SOCIAL_INSURANCE_LEVEL2 = 8000.0;                //缴纳社保基数等级2
+    public static final Double PROPORTION_OF_SOCIAL_INSURANCE_LEVEL1 = 0.08;    //缴纳社保基数等级1比例
+    public static final Double PROPORTION_OF_SOCIAL_INSURANCE_LEVEL2 = 0.15;    //缴纳社保基数等级2比例
+
     private Integer id;                         //工资id
     private Integer userId;                     //用户id
     private Double basicSalary;                 //基本工资
@@ -79,18 +87,4 @@ public class Salary {
         this.settlementDate = settlementDate;
     }
 
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("Salary{");
-        sb.append("id=").append(id);
-        sb.append(", userId=").append(userId);
-        sb.append(", basicSalary=").append(basicSalary);
-        sb.append(", overtimePay=").append(overtimePay);
-        sb.append(", rewardAndPunishment=").append(rewardAndPunishment);
-        sb.append(", socialInsurance=").append(socialInsurance);
-        sb.append(", total=").append(total);
-        sb.append(", settlementDate=").append(settlementDate);
-        sb.append('}');
-        return sb.toString();
-    }
 }

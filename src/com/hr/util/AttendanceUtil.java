@@ -7,10 +7,6 @@ import java.util.Calendar;
 import java.util.List;
 
 public class AttendanceUtil {
-    public final static int clock_in_hour = 9;
-    public final static int clock_in_minute = 0;
-    public final static int clock_out_hour = 17;
-    public final static int clock_out_minute = 0;
 
     public static boolean isRun(int year) {
         return (0 == year % 4 && (year % 100 != 0 || year % 400 == 0));

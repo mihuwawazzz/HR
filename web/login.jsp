@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: zhaozhenzhen
-  Date: 2017/3/12
-  Time: 23:38
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
@@ -78,11 +71,10 @@
         <form action="/user/queryByUser" method="post">
             <div class="items">
                 <label class="block">邮箱(账号)：</label><input id="email" type="text" name="email"/>
-                <span>${requestScope.error}</span>
             </div>
             <div class="items">
                 <label for="password">密码：</label><input id="password" type="password" name="password"/>
-                <span></span>
+                <span id="error">${requestScope.error}</span>
             </div>
             <div style="width: 130px;text-align: right">
                 <input type="submit" id="button" value="登录"/>
