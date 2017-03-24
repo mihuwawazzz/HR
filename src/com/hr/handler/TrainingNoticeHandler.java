@@ -29,7 +29,7 @@ public class TrainingNoticeHandler {
     @ResponseBody
     @RequestMapping("/queryByUserId")
     private List<TrainingNotice> queryByUserId(Integer userId) {
-        return trainingNoticeService.queryByUserId(userId);
+        return trainingNoticeService.queryByUserIdFetch(userId);
     }
 
     @ResponseBody

@@ -123,7 +123,7 @@ public class SalaryAndRewAndPunHandler {
             if (totalBefore < 0) {
                 totalBefore = 0;
             }
-            salary.setTotal(totalBefore + socialInsurance);
+            salary.setTotal(totalBefore - socialInsurance);
             salary.setSettlementDate(new Date());
             salaryAndRewAndPunService.insertOpUpdateSalary(salary);
         }

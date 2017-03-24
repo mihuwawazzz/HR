@@ -24,7 +24,7 @@
     %>
     <div id="right">
         <c:choose>
-            <c:when test="${empty requestScope.todayAttendance}">
+            <c:when test="${empty requestScope.todayAttendance.clockInTime}">
                 <div class="clock-in-out" id="clock-in">
                     <a href="<%=basePath%>/attendance/insertClockIn/${sessionScope.user.id}">
                         <input type="button" value="上班打卡"/>
