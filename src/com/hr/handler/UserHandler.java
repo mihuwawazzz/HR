@@ -101,7 +101,7 @@ public class UserHandler {
         if (username.equals("")) {
             users = userService.queryAll();
         } else {
-            users = userService.queryByUsername(username);
+            users = userService.queryByUsernameAll(username);
         }
         queryDepAndPosi(map);
         map.put("users", users);

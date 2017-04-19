@@ -18,4 +18,12 @@
     </div>
 </div>
 </body>
+<script>
+    $(function () {
+        var note = "${requestScope.note}";
+        if (note != "") {
+            alert(note);
+        }
+    })
+</script>
 </html>

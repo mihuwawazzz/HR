@@ -25,6 +25,10 @@ public class AttendanceHandler {
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH) + 1;
         int day = calendar.get(Calendar.DAY_OF_MONTH);
+//        if(attendance == null){
+//            attendance = new Attendance();
+//            attendance.setUserId(userId);
+//        }
         return attendanceService.queryByDate(userId, year, month, day);
     }
 

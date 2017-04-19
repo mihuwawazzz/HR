@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 
@@ -55,9 +56,18 @@ public class ResumeHandler {
     }
 
     @RequestMapping(value = "/insertOrUpdate", method = RequestMethod.POST)
-    public String insertOrUpdate(Resume resume) {
-        resume.setState(Resume.INTERVIEW_UNPASS);
-        resumeService.insertOrUpdate(resume);
+    public String insertOrUpdate(Resume resume, HttpServletRequest request, HttpSession session) {
+        String date = request.getParameter("date");
+        String reDate = (String) session.getAttribute("date");
+        System.out.println(date);
+        System.out.println(reDate);
+        if (date.equals(reDate)) {
+            request.setAttribute("note", "请不要重复提交表单");
+        } else {
+            resume.setState(Resume.INTERVIEW_UNPASS);
+            resumeService.insertOrUpdate(resume);
+            session.setAttribute("date", date);
+        }
         return "visitor/visitor";
     }
 

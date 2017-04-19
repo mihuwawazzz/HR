@@ -28,7 +28,7 @@ public class HibernateTest {
     }
 
     @Test
-    public void hh(){
+    public void hh() {
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
@@ -45,7 +45,7 @@ public class HibernateTest {
         System.out.println("after = " + after);
         System.out.println(before);
         List<RewardAndPunishment> rewardAndPunishments = (List<RewardAndPunishment>) hibernateTemplate
-                .find("from RewardAndPunishment where date>? and date<? and userId = ?", before, after,1);
+                .find("from RewardAndPunishment where date>? and date<? and userId = ?", before, after, 1);
         System.out.println(rewardAndPunishments);
     }
 }

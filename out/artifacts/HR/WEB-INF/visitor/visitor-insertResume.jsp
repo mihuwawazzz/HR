@@ -25,6 +25,11 @@
             <c:when test="${empty requestScope.resume}">
                 <div id="resume">
                     <form action="<%=basePath%>/resume/insertOrUpdate" method="post">
+                        <input id="rePost" hidden="hidden" name="date">
+                        <script>
+                            var date = new Date();
+                            $("#rePost").val(date);
+                        </script>
                         <table>
                             <tr>
                                 <th colspan="2"><h2>iotek公司求职简历表</h2></th>

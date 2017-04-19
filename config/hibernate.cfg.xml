@@ -4,6 +4,12 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
+
+        <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+        <!--<property name="connection.url">jdbc:mysql://172.16.139.101:3306/hr?useSSL=false</property>-->
+        <!--<property name="connection.username">root</property>-->
+        <!--<property name="connection.password">qwer1234</property>-->
+
         <!--数据库方言，显示sql语句，格式化sql语句-->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
         <property name="hibernate.show_sql">true</property>

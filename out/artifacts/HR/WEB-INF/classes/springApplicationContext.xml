@@ -13,14 +13,13 @@
        http://www.springframework.org/schema/tx
        http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <!--数据库链接信息-->
+    <!--&lt;!&ndash;数据库链接信息&ndash;&gt;-->
     <context:property-placeholder location="classpath:db.properties"/>
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="driverClass" value="${driverClass}"/>
-        <property name="jdbcUrl" value="${jdbcUrl}"/>
-        <property name="user" value="${username}"/>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${driverClass}"/>
+        <property name="url" value="${jdbcUrl}"/>
+        <property name="username" value="${username}"/>
         <property name="password" value="${password}"/>
-        <property name="initialPoolSize" value="3"/>
     </bean>
 
     <!-- hibernate配置由spring管理,sessionFactory交给spring管理-->
